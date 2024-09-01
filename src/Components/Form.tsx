@@ -4,7 +4,6 @@ import { Box, Button, FormControl, FormLabel, Input, VStack } from '@chakra-ui/r
 const Form: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
   };
 
   return (

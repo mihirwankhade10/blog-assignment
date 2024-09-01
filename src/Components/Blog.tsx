@@ -37,7 +37,7 @@ import {
   ChevronUpIcon,
   HamburgerIcon,
 } from "@chakra-ui/icons";
-import Form from "./Form"; // Assuming Form component is in the same directory
+import Form from "./Form";
 
 const Blog: React.FC = () => {
   const bgColor = useColorModeValue("gray.100", "gray.700");
@@ -75,7 +75,6 @@ const Blog: React.FC = () => {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    // Implement search functionality here
     console.log("Searching for:", searchTerm);
   };
 
