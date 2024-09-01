@@ -8,17 +8,17 @@ const Form: React.FC = () => {
   };
 
   return (
-    <Box as="form" onSubmit={handleSubmit}>
-      <VStack spacing={4}>
+    <Box as="form" onSubmit={handleSubmit} width="100%" maxWidth="400px" margin="auto">
+      <VStack spacing={4} align="stretch">
         <FormControl isRequired>
           <FormLabel>Email</FormLabel>
-          <Input type="email" />
+          <Input type="email" size={["sm", "md"]} />
         </FormControl>
         <FormControl isRequired>
           <FormLabel>Password</FormLabel>
-          <Input type="password" />
+          <Input type="password" size={["sm", "md"]} />
         </FormControl>
-        <Button type="submit" colorScheme="blue">Sign Up</Button>
+        <Button type="submit" colorScheme="blue" size={["sm", "md"]}>Sign Up</Button>
       </VStack>
     </Box>
   );
